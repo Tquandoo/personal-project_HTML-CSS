@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronic Shop</title>
+    <!-- bootstrap links -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+    <!-- css, font -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/carousel.css">
+    <link rel="stylesheet" href="assets/font/font-awesome/css/all.min.css" />
+  
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+  </head>
+
+<body>
+	<!-- top navbar -->
+	<header>
+		<div class="d-flex justify-content-between flex-column flex-sm-row align-items-center py-2 px-3 ">
+			<p class="mb-0">WELCOME TO OUR SHOP</p>
+			<div class="d-flex mt-2 mt-sm-0">
+				<a href="login.html" class="text-decoration-none text-dark mx-2">
+					<img src="./assets/images/register.png" alt="" class="img-fluid" />Login
+				</a>
+				<a href="register.html" class="text-decoration-none text-dark mx-2">
+					<img src="./assets/images/register.png" alt="" class="img-fluid" />Register
+				</a>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="index.html"><span class="text-warning">E</span>Lectronic <span>Shop</span></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span><img src="./assets/images/menu.png" alt="" class="img-fluid col-8"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-2 directional">
+				<li class="nav-item">
+				  <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false">
+					Category
+				  </a>
+				  <ul class="dropdown-menu active" aria-labelledby="navbarDropdown" >
+					<li><a class="dropdown-item" href="productDetails.html">Smart Phone</a></li>
+					<li><a class="dropdown-item" href="productDetails.html">Mobile Phone</a></li>
+					<li><a class="dropdown-item" href="productDetails.html">Cameras</a></li>
+					<li><a class="dropdown-item" href="productDetails.html">Fridge</a></li>
+					<li><a class="dropdown-item" href="productDetails.html">AC</a></li>
+					<li><a class="dropdown-item" href="productDetails.html">Samrt Watch</a></li>
+					<li><a class="dropdown-item" href="productDetails.html">Headphone</a></li>
+					<li><a class="dropdown-item" href="productDetails.html">Laptop</a></li>
+					<li><a class="dropdown-item" href="productDetails.html">PC Moniter</a></li>
+				  </ul>
+				</li>
+				<li class="nav-item ">
+				  <a class="nav-link active" href="about.html">About</a>
+				</li>
+				<li class="nav-item ">
+				  <a class="nav-link active" href="contact.html">Contact</a>
+				</li>
+			  </ul>
+			  <section>
+				<form class="d-flex mx-3">
+				  <input class="form-control rounded-pill me-2 " type="search" placeholder="Search" aria-label="Search">
+				  <button class="btn btn-warning rounded-pill text-white" type="submit">Search</button>
+				  <span class="d-flex align-items-center mx-3 cart">
+					<a href="cart.html"
+					  class="text-decoration-none text-danger ms-2 fs-3 cursor-pointer  cart-icon-wrapper">
+					  <i class="fa-solid fa-cart-shopping"></i>
+					  <span class="cart-badge">4</span>
+					</a>
+				  </span>
+				</form>
+			  </section>
+			</div>
+		  </div>
+		</nav>
+	  </header>
+	<!-- navbar -->
+	<main>
+		<section>
+			<div class="container mt-5 mb-5">
+				<div class="row d-flex justify-content-center">
+					<div class="col-12  col-md-12">
+						<div class="card">
+							<div class="row p-3">
+								<div class="product-image col-md-6">
+									<div class="images p-3 position-relative">
+										<div
+											class="text-center  p-4 d-flex align-items-center justify-content-center  images-main">
+											<i class=" i1 fs-2 fa-solid fa-circle-arrow-left"></i>
+											<img id="main-image" src="assets/images/ip15prmax.webp" width="310" />
+											<i class=" i2 fs-2 fa-solid fa-circle-arrow-right"></i>
+										</div>
+										<div class="container thumbnail text-center mt-4 "> 
+											<img class="offer-img my-2" onclick="change_image(this)" 
+												src="assets/images/ip15prmax.webp">
+											<img class="offer-img my-2" onclick="change_image(this)"
+												src="assets/images/ip15prm.png" >
+											<img class="offer-img my-2" onclick="change_image(this)"
+												src="assets/images/ip15prmax.webp" >
+											<img class="offer-img my-2" onclick="change_image(this)"
+												src="assets/images/ip15prm.png" >
+										</div>
+										<div class="thumbnail-banner">
+											<img class="thumbnail img-fluid d-block mx-auto col-md-12 pt-5 expand-banner "
+												src="assets/images/thumbnailBanner.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 product-price px-0">
+									<div class="product">
+										<div class="d-flex justify-content-between align-items-center pb-2">
+											<div class="d-flex align-items-center back-shop">
+												<a class="text-decoration-none" href="index.html"><i
+														class="fa fa-long-arrow-left"></i> <span
+														class="ml-1">Back</span></a>
+											</div>
+											<a href="cart.html"><i class="fa fa-shopping-cart  cart-badge1"></i></a>
+										</div>
+										<div class="mt-4 mb-4">
+											<h3 class="text-uppesrcase text-black">IPhone 15 Pro Max 1TB</h3>
+											<p class="promotional text-black ">Promotional price at: Hanoi</p>
+											<div class="price d-flex flex-row align-items-center fs-3">
+												<span class="act-price text-black fs-3">$1500</span>
+												<div class="mx-3"><small class="dis-price text-muted fs-5"> $2000
+													</small> </div>
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-12 p-4 about text-black">
+											<h5 class="my-0">Sale:</h5>
+											<p class="pb-3 about__sale">Prices and application offers until 23:00 |
+												October 31</p>
+											<ul class="px-3">
+												<li class="my-2">Lorem ipsum, dolor sit amet consectetur adipisicing
+													elit.incidunt recusandae
+													nesciunt esse cum aut at! <a href="#">detail</a></li>
+												<li class="my-2">Lorem ipsum, dolor sit amet consectetur adipisicing
+													elit.incidunt recusandae
+													nesciunt esse cum aut at! <a href="#">detail</a></li>
+												<li class="my-2">Lorem ipsum, dolor sit amet consectetur adipisicing
+													elit.incidunt recusandae
+													nesciunt esse cum aut at! <a href="#">detail</a></li>
+											</ul>
+										</div>
+										<div class="sizes my-5 ">
+											<h6 class="text-uppercase text-dark col-md-12">Capacity:</h6>
+											<div class="d-flex ">
+												<button class="option btn btn-secondary ">256GB</button>
+												<button class="option btn btn-secondary  mx-3">512GB</button>
+												<button class="option btn btn-secondary ">1TB</button>
+											</div>
+										</div>
+										<div
+											class="cart col-md-12 d-flex align-items-center justify-content-between ">
+											<a href="cart.html"><button
+													class="btn btn-primary text-uppercase mr-2 px-4">Add to
+													cart</button>
+											</a>
+											<div class="reaction">
+												<i class="fa fa-heart text-muted mx-2"></i>
+												<i class="fa fa-share-alt text-muted"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class=" d-flex justify-content-center">
+			<button class="btn btn-dark active mx-4">Product Description</button>
+			<button class="btn btn-dark  mx-4">Product Specifications</button>
+			<button class="btn btn-dark  mx-4">product reviews</button>
+		</section>
+		<section class="container product-des">
+			<div class="row mx-auto d-flex justify-content-center my-5">
+				<img class="col-12" src="assets/images/Product des.jpg" alt="">
+			</div>
+			<h1 class="text-center text-warning border-bottom-3 mb-5">PRODUCTS DESCRIPTION</h1>
+
+			<div class="col-md-12 col-lg-12 about text-dark">
+				<div class="highlights">
+					<h5 class="text-dark text-center my-0">FEATURE HIGHLIGHTS</h5>
+					<p class="p-3">
+						1. IPhone 15 Pro Max 512GB is the perfect combination of large storage capacity, powerful
+						performance and
+						excellent screen. This makes the iPhone 15 Pro Max price also the highest in the new iPhone
+						series in 2023.
+						Let's immediately find out what is notable about the Pro Max 512GB model in the iPhone 15
+						series:
+						<br><br>
+
+						2. 512GB large internal memory: With this storage space, you will never worry about not having
+						enough room to
+						store your favorite photos, videos, and apps.
+						<br><br>
+
+						3. Peak performance: Equipped with the advanced A17 Pro chipset, iPhone 15 Pro Max 512GB can
+						meet all
+						performance needs. With up to 10% faster CPU and up to 20% more powerful GPU, this phone helps
+						you perform
+						every task smoothly and quickly.
+						<br><br>
+
+						4. Outstanding quality screen: The high-resolution 120Hz OLED screen and impressive pixel
+						density on iPhone 15
+						Pro Max 512GB provides an outstanding video viewing and gaming experience. Vivid, sharp images
+						along with
+						automatic color adjustment create a great user experience.
+						<br><br>
+
+						<strong class="text-uppercase fs-5">If you need more storage, the iPhone 15 Pro Max 1TB is
+							probably the perfect choice for you.</strong>
+					</p>
+				</div>
+				<div class="des">
+
+				</div>
+			</div>
+		</section>
+
+
+		<!-- preview -->
+		<div class="container">
+			<div id="reviews" class="review-section">
+				<div class="d-flex align-items-center justify-content-between mb-4">
+					<h4 class="m-0">37 Reviews</h4>
+					<select class="custom-select custom-select-sm border-0 shadow-sm ml-2 select2-hidden-accessible"
+						data-select2-id="1" tabindex="-1" aria-hidden="true">
+						<option data-select2-id="3">Most Relevant</option>
+						<option>Most Recent</option>
+					</select>
+					<span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2"
+						>
+						<span class="selection">
+							<span class="select2-selection select2-selection--single" role="combobox"
+								aria-haspopup="true" aria-expanded="false" tabindex="0"
+								aria-labelledby="select2-qd66-container">
+								<span class="select2-selection__rendered" id="select2-qd66-container" role="textbox"
+									aria-readonly="true" title="Most Relevant">Most Relevant</span>
+								<span class="select2-selection__arrow" role="presentation"><b
+										role="presentation"></b></span>
+							</span>
+						</span>
+						<span class="dropdown-wrapper" aria-hidden="true"></span>
+					</span>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<table class="stars-counters">
+							<tbody>
+								<tr class="">
+									<td>
+										<span>
+											<button
+												class="fit-button fit-button-color-blue fit-button-fill-ghost fit-button-size-medium stars-filter">5
+												Stars</button>
+										</span>
+									</td>
+									<td class="progress-bar-container">
+										<div class="fit-progressbar fit-progressbar-bar star-progress-bar">
+											<div class="fit-progressbar-background">
+												<span class="progress-fill" ></span>
+											</div>
+										</div>
+									</td>
+									<td class="star-num">(36)</td>
+								</tr>
+								<tr class="">
+									<td>
+										<span>
+											<button
+												class="fit-button fit-button-color-blue fit-button-fill-ghost fit-button-size-medium stars-filter">5
+												Stars</button>
+										</span>
+									</td>
+									<td class="progress-bar-container">
+										<div class="fit-progressbar fit-progressbar-bar star-progress-bar">
+											<div class="fit-progressbar-background">
+												<span class="progress-fill" ></span>
+											</div>
+										</div>
+									</td>
+									<td class="star-num">(2)</td>
+								</tr>
+								<tr class="">
+									<td>
+										<span>
+											<button
+												class="fit-button fit-button-color-blue fit-button-fill-ghost fit-button-size-medium stars-filter">5
+												Stars</button>
+										</span>
+									</td>
+									<td class="progress-bar-container">
+										<div class="fit-progressbar fit-progressbar-bar star-progress-bar">
+											<div class="fit-progressbar-background">
+												<span class="progress-fill" ></span>
+											</div>
+										</div>
+									</td>
+									<td class="star-num">(0)</td>
+								</tr>
+								<tr class="">
+									<td>
+										<span>
+											<button
+												class="fit-button fit-button-color-blue fit-button-fill-ghost fit-button-size-medium stars-filter">5
+												Stars</button>
+										</span>
+									</td>
+									<td class="progress-bar-container">
+										<div class="fit-progressbar fit-progressbar-bar star-progress-bar">
+											<div class="fit-progressbar-background">
+												<span class="progress-fill" ></span>
+											</div>
+										</div>
+									</td>
+									<td class="star-num">(0)</td>
+								</tr>
+								<tr class="">
+									<td>
+										<span>
+											<button
+												class="fit-button fit-button-color-blue fit-button-fill-ghost fit-button-size-medium stars-filter">5
+												Stars</button>
+										</span>
+									</td>
+									<td class="progress-bar-container">
+										<div class="fit-progressbar fit-progressbar-bar star-progress-bar">
+											<div class="fit-progressbar-background">
+												<span class="progress-fill" ></span>
+											</div>
+										</div>
+									</td>
+									<td class="star-num">(0)</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-md-6">
+						<div class="ranking">
+							<h6 class="text-display-7">Rating Breakdown</h6>
+							<ul>
+								<li>
+									Seller communication level<span>5<span
+											class="review-star rate-10 show-one"></span></span>
+								</li>
+								<li>
+									Recommend to a friend<span>5<span
+											class="review-star rate-10 show-one"></span></span>
+								</li>
+								<li>
+									Service as described<span>4.9<span
+											class="review-star rate-10 show-one"></span></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="review-list">
+				<ul>
+					<li>
+						<div class="d-flex">
+							<div class="left">
+								<span>
+									<img src="https://bootdey.com/img/Content/avatar/avatar1.png"
+										class="profile-pict-img img-fluid" alt="" />
+								</span>
+							</div>
+							<div class="right">
+								<h4>
+									<a class="text-decoration-none text-dark" href="#">Tquandoo1</a>
+									<span class="gig-rating text-body-2">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="15"
+											height="15">
+											<path fill="currentColor"
+												d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+											</path>
+										</svg>
+										5.0
+									</span>
+								</h4>
+								<div class="country d-flex align-items-center">
+									<span>
+										<img class="country-flag img-fluid"
+											src="https://bootdey.com/img/Content/avatar/avatar6.png" />
+									</span>
+									<div class="country-name font-accent">Ha Noi</div>
+								</div>
+								<div class="review-description">
+									<p>
+										The process was smooth, after providing the required info, Pragyesh sent me an
+										outstanding packet of wireframes. Thank you a lot!
+									</p>
+								</div>
+								<span class="publish py-3 d-inline-block w-100">Published 4 weeks ago</span>
+								<div class="helpful-thumbs">
+									<div class="helpful-thumb text-body-2">
+										<span class="fit-icon thumbs-icon ">
+											<svg width="14" height="14" viewBox="0 0 14 14"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M13.5804 7.81165C13.8519 7.45962 14 7 14 6.43858C14 5.40843 13.123 4.45422 12.0114 4.45422H10.0932C10.3316 3.97931 10.6591 3.39024 10.6591 2.54516C10.6591 0.948063 10.022 0 8.39207 0C7.57189 0 7.26753 1.03682 7.11159 1.83827C7.01843 2.31708 6.93041 2.76938 6.65973 3.04005C6.01524 3.68457 5.03125 5.25 4.44013 5.56787C4.38028 5.59308 4.3038 5.61293 4.22051 5.62866C4.06265 5.39995 3.79889 5.25 3.5 5.25H0.875C0.391754 5.25 0 5.64175 0 6.125V13.125C0 13.6082 0.391754 14 0.875 14H3.5C3.98325 14 4.375 13.6082 4.375 13.125V12.886C5.26354 12.886 7.12816 14.0002 9.22728 13.9996C9.37781 13.9997 10.2568 14.0004 10.3487 13.9996C11.9697 14 12.8713 13.0183 12.8188 11.5443C13.2325 11.0596 13.4351 10.3593 13.3172 9.70944C13.6578 9.17552 13.7308 8.42237 13.5804 7.81165ZM0.875 13.125V6.125H3.5V13.125H0.875ZM12.4692 7.5565C12.9062 7.875 12.9062 9.1875 12.3159 9.48875C12.6856 10.1111 12.3529 10.9439 11.9053 11.1839C12.1321 12.6206 11.3869 13.1146 10.3409 13.1246C10.2504 13.1255 9.32247 13.1246 9.22731 13.1246C7.23316 13.1246 5.54296 12.011 4.37503 12.011V6.44287C5.40611 6.44287 6.35212 4.58516 7.27847 3.65879C8.11368 2.82357 7.83527 1.43153 8.3921 0.874727C9.78414 0.874727 9.78414 1.84589 9.78414 2.54518C9.78414 3.69879 8.94893 4.21561 8.94893 5.32924H12.0114C12.6329 5.32924 13.1223 5.88607 13.125 6.44287C13.1277 6.99967 12.9062 7.4375 12.4692 7.5565ZM2.84375 11.8125C2.84375 12.1749 2.54994 12.4688 2.1875 12.4688C1.82506 12.4688 1.53125 12.1749 1.53125 11.8125C1.53125 11.4501 1.82506 11.1562 2.1875 11.1562C2.54994 11.1562 2.84375 11.4501 2.84375 11.8125Z">
+												</path>
+											</svg>
+										</span>
+										<span class=" mx-2">Like</span>
+									</div>
+									<div class="helpful-thumb text-body-2 ml-3">
+										<span class="fit-icon thumbs-icon ">
+											<svg width="14" height="14" viewBox="0 0 14 14"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0.419563 6.18835C0.148122 6.54038 6.11959e-07 7 5.62878e-07 7.56142C2.81294e-05 8.59157 0.876996 9.54578 1.98863 9.54578L3.90679 9.54578C3.66836 10.0207 3.34091 10.6098 3.34091 11.4548C3.34089 13.0519 3.97802 14 5.60793 14C6.42811 14 6.73247 12.9632 6.88841 12.1617C6.98157 11.6829 7.06959 11.2306 7.34027 10.9599C7.98476 10.3154 8.96875 8.75 9.55987 8.43213C9.61972 8.40692 9.6962 8.38707 9.77949 8.37134C9.93735 8.60005 10.2011 8.75 10.5 8.75L13.125 8.75C13.6082 8.75 14 8.35825 14 7.875L14 0.875C14 0.391754 13.6082 -3.42482e-08 13.125 -7.64949e-08L10.5 -3.0598e-07C10.0168 -3.48226e-07 9.625 0.391754 9.625 0.875L9.625 1.11398C8.73647 1.11398 6.87184 -0.000191358 4.77272 0.00038257C4.62219 0.000300541 3.74322 -0.000438633 3.65127 0.000382472C2.03027 -1.04643e-06 1.12867 0.981667 1.18117 2.45566C0.76754 2.94038 0.564868 3.64065 0.682829 4.29056C0.342234 4.82448 0.269227 5.57763 0.419563 6.18835ZM13.125 0.875L13.125 7.875L10.5 7.875L10.5 0.875L13.125 0.875ZM1.53079 6.4435C1.09375 6.125 1.09375 4.8125 1.6841 4.51125C1.31436 3.88891 1.64713 3.05613 2.09467 2.81605C1.86791 1.37941 2.61313 0.885417 3.65906 0.875355C3.74962 0.874535 4.67753 0.875355 4.77269 0.875355C6.76684 0.875355 8.45704 1.98898 9.62497 1.98898L9.62497 7.55713C8.5939 7.55713 7.64788 9.41484 6.72153 10.3412C5.88632 11.1764 6.16473 12.5685 5.6079 13.1253C4.21586 13.1253 4.21586 12.1541 4.21586 11.4548C4.21586 10.3012 5.05107 9.78439 5.05107 8.67076L1.9886 8.67076C1.36708 8.67076 0.877707 8.11393 0.874973 7.55713C0.872266 7.00033 1.09375 6.5625 1.53079 6.4435ZM11.1563 2.1875C11.1563 1.82506 11.4501 1.53125 11.8125 1.53125C12.1749 1.53125 12.4688 1.82506 12.4688 2.1875C12.4688 2.54994 12.1749 2.84375 11.8125 2.84375C11.4501 2.84375 11.1563 2.54994 11.1563 2.1875Z">
+												</path>
+											</svg>
+										</span>
+										<span class="mx-2 thumb-title">Dislike</span>
+									</div>
+								</div>
+								<div class="response-item mt-4 d-flex">
+									<div class="left">
+										<span>
+											<img src="https://bootdey.com/img/Content/avatar/avatar2.png"
+												class="profile-pict-img img-fluid" alt="" />
+										</span>
+									</div>
+									<div class="right">
+										<h4>
+											<a class="text-decoration-none text-dark" href="#">Tquandoo2</a>
+											<span class="gig-rating text-body-2">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"
+													width="15" height="15">
+													<path fill="currentColor"
+														d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+													</path>
+												</svg>
+												5.0
+											</span>
+										</h4>
+										<div class="country d-flex align-items-center">
+											<span>
+												<img class="country-flag img-fluid"
+													src="https://bootdey.com/img/Content/avatar/avatar3.png" />
+											</span>
+											<div class="country-name font-accent">America</div>
+										</div>
+										<div class="review-description">
+											<p>
+												Great product, thank you store!
+											</p>
+										</div>
+										<span class="publish py-3 d-inline-block w-100">Published 4 weeks ago</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- newslater -->
+		<section class="mt-5">
+			<div class="container" id="newslater">
+				<h3 class="text-center">
+					Subscribe To The Electronic Shop For Latest upload.
+				</h3>
+				<div class="input text-center mt-5">
+					<input class="px-1" type="text" placeholder="Enter Your Email.." />
+					<button class="mx-1 my-sm-3 border-0 rounded-3 text-white" id="subscribe">
+						SUBSCRIBE
+					</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- newslater -->
+
+	<!-- footer -->
+	<footer id="footer" class="text-white py-4 mt-5">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 footer-contact footer-links my-3">
+						<h4>Electronic Shop</h4>
+						<ul>
+							<li class="text-white text-decoration-none">Hà Nội</li>
+							<li class="text-white text-decoration-none"> <strong>Phone:</strong> +123456789</li>
+							<li class="text-white text-decoration-none"> <strong>Email:</strong> electronicshop@.com
+							</li>
+					</div>
+
+					<div class="col-lg-3 col-md-6 footer-links my-3">
+						<h4>Usefull Links</h4>
+						<ul>
+							<li class="text-white text-decoration-none"><a href="#">Home</a></li>
+							<li class="text-white text-decoration-none"><a href="#">About Us</a></li>
+							<li class="text-white text-decoration-none"><a href="#">Services</a></li>
+							<li class="text-white text-decoration-none"><a href="#">Terms of service</a></li>
+							<li class="text-white text-decoration-none"><a href="#">Privacy policey</a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-3 col-md-6 footer-links my-3">
+						<h4>Our Services</h4>
+						<ul>
+							<li class="text-white text-decoration-none"><a href="#">PS 5</a></li>
+							<li class="text-white text-decoration-none"><a href="#">Computer</a></li>
+							<li class="text-white text-decoration-none"><a href="#">Gaming Laptop</a></li>
+							<li class="text-white text-decoration-none"><a href="#">Mobile Phone</a></li>
+							<li class="text-white text-decoration-none"><a href="#">Gaming Gadget</a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-3 col-md-6 footer-links my-3">
+						<h4>Our Social Networks</h4>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia,
+							quibusdam.
+						</p>
+
+						<div class="socail-links mt-3">
+							<a class="text-white text-decoration-none" href="#"><i class="fa-brands fa-twitter"></i></a>
+							<a class="text-white text-decoration-none" href="#"><i
+									class="fa-brands fa-facebook-f"></i></a>
+							<a class="text-white text-decoration-none" href="#"><i
+									class="fa-brands fa-instagram"></i></a>
+							<a class="text-white text-decoration-none" href="#"><i class="fa-brands fa-skype"></i></a>
+							<a class="text-white text-decoration-none" href="#"><i
+									class="fa-brands fa-linkedin"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr />
+		<div class="container py-4">
+			<div class="d-flex justify-content-between align-items-center copyright">
+				&copy; Copyright <strong><span>Electronic Shop</span></strong>. All Rights Reserved
+			</div>
+			<div class="credits">Designed by <a href="#">Tquandoo </a></div>
+		</div>
+	</footer>
+	<!-- footer -->
+
+	<a href="#" class="arrow"><i><img src="./assets/images/arrow.png" alt="" /></i></a>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+</body>
+<script src="assets/js/script.js"></script>
+
+</html>
