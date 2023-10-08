@@ -1,0 +1,51 @@
+.login{
+    padding: 20px 20px;
+    border: 1px solid #949292;
+    border-radius: 10px;
+    margin: 15px;
+}
+@media (max-width: 576px){
+    .form-login img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+    }
+}
+@media (max-width: 375px){
+    .form-login img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+    }
+}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.btn-face{
+    background-color: #3b5998;
+}
+.btn-twi{
+    background-color: #55acee;
+}
+
+/* login */
+
+.login-form {
+    border: 2px solid #000; 
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Đảm bảo div cha có chiều cao đầy đủ */
+}
+.login-form-img {
+    height: 100%;
+    padding: 20px 30px;
+}
